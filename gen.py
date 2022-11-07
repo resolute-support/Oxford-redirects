@@ -3,7 +3,7 @@ import random
 
 letters = string.ascii_lowercase
 
-for i in range(20):
+for i in range(30):
     filename = ''.join(random.choice(letters) for i in range(10))
     filename = filename+".html"
     f = open(filename, "w")
