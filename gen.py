@@ -5,7 +5,8 @@ letters = string.ascii_lowercase
 
 for i in range(30):
     filename = ''.join(random.choice(letters) for i in range(10))
-    filename = filename+".html"
+    s1 = f'{i:02d}'
+    filename = s1+"."+filename+".html"
     f = open(filename, "w")
     f.write("""
 <!DOCTYPE html>
